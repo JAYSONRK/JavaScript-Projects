@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender {
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    width: 1200px;
+    height: 200px;
+}
+
+.day {
+    color: rgba(33, 33, 213, 0.843);
+    padding: auto;
+    border: 2.5px solid rgba(9, 9, 94, 0.704);
+}
+
+.month {
+    color: rgba(213, 60, 33, 0.843);
+    padding: auto;
+    width: 40rem;
+    border: 2.5px solid rgba(94, 9, 9, 0.704);
+}
+
+.year {
+    color: rgba(33, 213, 60, 0.843);
+    padding: auto;
+    border: 2.5px solid rgba(9, 94, 32, 0.704);
+}
+
+button {
+    margin: 3rem 40%;
+    padding: 1rem 8rem;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>calender</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calender">
+                <div class="day">
+                    <h5>DAY</h5>
+                    <h1 class="d">00</h1>
+                </div>
+                <div class="month">
+                    <h5>MONTH</h5>
+                    <h1 class="m" >00</h1>
+                </div>
+                <div class="year">
+                    <h5>YEAR</h5>
+                    <h1 class="y">00</h1>
+                </div>
+            </div>
+            <button>CLICK</button>
+         </div>
+    </body>
+</html>
+
+<script>
+  //Intialization
+  let count = 1;
+  let d = 1; 
+  let m = 'JANUARY'; 
+  let y = 2022; 
+  //Decleration -DOM
+  const day = document.querySelector('.d');
+  const month = document.querySelector('.m');
+  const year = document.querySelector('.y');
+  const button = document.querySelector('button');
+  //Main Function
+  const myCalendar = () => {
+  day.innerHTML = d;
+  month.innerHTML = m;
+  year.innerHTML = y;
+  myDay(); //Callback Function
+  count++;
+  }
+
+  myDay = () => {
+    if (count <= 31) {
+      return  d = count;
+    } else if (count > 31 && count <= 59) {
+    return m = 'FEBRUARY', d =  count - 31 ;
+  } else if (count > 59 && count <= 90) {
+    return m = 'MARCH', d =  count - 59 ;
+  } else if (count > 90 && count <= 120) {
+    return m = 'APRIL', d =  count - 90 ;
+  }  else if (count > 120 && count <= 151) {
+    return m = 'MAY', d =  count - 120 ;
+  }  else if (count > 151 && count <= 181) {
+    return m = 'JUNE', d =  count - 151 ;
+  } else if (count > 181 && count <= 212) {
+    return m = 'JULY', d =  count - 181 ;
+  } else if (count > 212 && count <= 243) {
+    return m = 'AUGUST', d =  count - 212 ;
+  }  else if (count > 243 && count <= 273) {
+    return m = 'SEPTEMBER', d =  count - 243 ;
+  } else if (count > 273 && count <= 304) {
+    return m = 'OCTOBER', d =  count - 273 ;
+  }  else if (count > 304 && count <= 334) {
+    return m = 'NOVEMBER', d =  count - 304 ;
+  } else if (count > 334 && count <= 364) {
+    return m = 'DECEMBER', d =  count - 334 ;
+  } else { 
+    return m = 'JANUARY', count = 1, d = 1, y++;
+  } }
+
+    button.addEventListener('click', myCalendar); //Adding Eventlistener
+
+</script>

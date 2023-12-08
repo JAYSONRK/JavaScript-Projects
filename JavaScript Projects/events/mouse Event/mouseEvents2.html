@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mouseEvents2.css">
+    <title>MOUSE EVENTS 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>MOUSE EVENTS 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus aliquid alias impedit officiis harum. Cupiditate non quasi sit. Excepturi labore aperiam velit eveniet sed alias iure itaque, fugiat a expedita.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus aliquid alias impedit officiis harum. Cupiditate non quasi sit. Excepturi labore aperiam velit eveniet sed alias iure itaque, fugiat a expedita.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus aliquid alias impedit officiis harum. Cupiditate non quasi sit. Excepturi labore aperiam velit eveniet sed alias iure itaque, fugiat a expedita.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus aliquid alias impedit officiis harum. Cupiditate non quasi sit. Excepturi labore aperiam velit eveniet sed alias iure itaque, fugiat a expedita.</p>
+        </div>
+    </div>
+    <script>
+        let box = document.querySelector('.box');
+        box.addEventListener('mouseenter', () => {
+            box.style.backgroundColor = 'red';
+        });
+        box.addEventListener('mouseleave', () => {
+            box.style.backgroundColor ='yellow';
+        })
+    </script>
+    
+</body>
+</html>
+

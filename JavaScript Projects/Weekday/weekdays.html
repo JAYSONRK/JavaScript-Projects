@@ -1,0 +1,44 @@
+
+<script>
+    myDay = () => {
+        const ul = document.getElementById('list');
+        const li = document.createElement('li'); // Use `createElement` instead of `createElement`
+        const attribute = document.createAttribute('class'); // Use `createAttribute` on `document`
+        attribute.value = "value";
+        li.setAttributeNode(attribute);
+        ul.appendChild(li); // Append the `li` element to the `ul`, not `document.body`
+        count = 1;
+        addDay() 
+    }
+
+    const addDay= () => {
+        if (count <= 7) {
+            switch(count) {
+    case 1:
+      return 'Sunday';
+      break;
+    case 2:
+      return 'Monday';
+      break;  
+    case 3:
+      return 'Tuesday';
+      break;
+    case 4:
+      return 'Wednesday';
+      break;
+    case 5:
+      return 'Thursday';
+      break;  
+    case 6:
+      return 'Friday';
+      break; 
+    case 7:
+      return 'Saturday'; 
+  }
+        } else {
+            count = 1;
+        }
+    }
+    
+    </script>
+    

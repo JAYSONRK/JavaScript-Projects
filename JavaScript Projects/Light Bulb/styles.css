@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 4, 50, 0.911);
+}
+
+.card {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    margin: 3rem 0;
+}
+
+button {
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin:0 1rem;
+}

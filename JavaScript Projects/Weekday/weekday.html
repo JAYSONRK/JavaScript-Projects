@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>weekday</title>
+        <link rel="stylesheet" href="weekday.css">
+    </head>
+
+
+    <body>
+        <h1>Days of the Week<h1>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <button onClick = myDay()>Day</button>
+    </body>
+</html>
+
+  <script>
+    let count = 1
+  const myDay = () => {
+      list = document.querySelector('ul');
+      list.children.item(count).textContent = day();
+      count++;
+}
+
+const day = () => {
+  if (count <= 7) {
+  switch(count) {
+    case 1:
+      return 'Sunday';
+      break;
+    case 2:
+      return 'Monday';
+      break;  
+    case 3:
+      return 'Tuesday';
+      break;
+    case 4:
+      return 'Wednesday';
+      break;
+    case 5:
+      return 'Thursday';
+      break;  
+    case 6:
+      return 'Friday';
+      break; 
+    case 7:
+      return 'Saturday'; 
+  }
+}
+}
+  </script>

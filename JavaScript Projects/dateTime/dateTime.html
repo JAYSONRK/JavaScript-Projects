@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>date</title>
+</head>
+<body>
+    <div class="container">
+        <div class="belt 1"></div>
+        <div class="dial">
+            <h3 class="time">Time: 00:00</h3>
+            <h3 class="date">Date: 00.00.00</h3> 
+            <button>CLICK</button>
+        </div> 
+        <div class="belt 2"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    let time = document.querySelector('.time');
+    let date = document.querySelector('.date');
+    let button = document.querySelector('button');
+
+    // using fetch then
+    const myDateTime = () => {
+        let d = new Date().toLocaleDateString();
+        date.innerHTML = `Date : ${d} `;
+        setInterval(() => {
+            const t = new Date().toLocaleTimeString();
+               time.innerHTML = `Time: ${t} `; 
+        }, 1000);
+    } 
+    button.addEventListener('click', myDateTime);
+
+
+    // using async await
+    const gener
+
+</script>
+

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.dial {
+   width: 400px;
+   height: 400px;
+   background-color: rgb(147, 234, 224);
+   border: 2px solid rgb(4, 4, 56);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 50%;
+}
+
+h3 {
+
+    font-size: 2rem;
+    color: blueviolet
+    
+}
+button {
+  padding: 0.5rem 2rem;
+  background-color: rgba(203, 27, 27, 0.842);
+  color: white;
+  border: none;
+  border-radius: 8px;;
+}
+
+
+.belt {
+    background-color: brown;
+    width: 500px;
+    height: 300px;
+    border-radius: -50%;
+}

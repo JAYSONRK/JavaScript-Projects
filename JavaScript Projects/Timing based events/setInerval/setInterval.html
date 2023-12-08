@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="setInterval.css">
+    <title>setInterval</title>
+</head>
+<body>
+    <h1>COUNTDOWN</h1>
+    <p></p>
+    <div>
+        <button class="btn1">START</button>
+    </div>
+    <div>
+        <button class="btn2">STOP</button>
+    </div>
+    
+    
+    <script>
+        let countdown = 0;
+        let startTime;
+        let start = document.querySelector('.btn1');
+        let stop =  document.querySelector('.btn2');
+        start.addEventListener('click', () => {
+               startTime = setInterval(() => {
+                document.querySelector('p').innerHTML = countdown;
+                countdown++;
+            },1000);
+});
+
+stop.addEventListener('click', () => {
+    clearInterval(startTime);
+});
+
+        
+    </script>
+
+    
+</body>
+</html>
